@@ -1,0 +1,38 @@
+
+#include <Servo.h>
+ 
+#define SERVO 6 // Porta Digital 6 PWM
+ 
+Servo s; // Variável Servo
+int pos; // Posição Servo
+ 
+void setup ()
+{
+  s.attach(SERVO);
+  Serial.begin(9600);
+  s.write(0); // Inicia motor posição zero
+}
+ 
+void loop()
+{
+  for(pos = 0; pos < 90; pos++)
+  {
+    s.write(pos);
+  delay(15);
+  }
+delay(1000);
+  for(pos = 90; pos >= 0; pos--)
+  {
+    s.write(pos);
+    delay(15);
+  }
+}
+
+//Voltagem de Operação: 3,0 – 7,2v
+ //Velocidade: 0,12 seg/60Graus (4,8v) sem carga
+ //Torque: 1,2 kg.cm (4,8v) e 1,6 kg.cm (6,0v)
+ //Temperatura de Operação.: -30C ~ +60C
+ //Dimensões.: 32x30x12 mm
+ //Tipo de Engrenagem: Nylon
+ //Tamanho cabo: 245 mm
+ //Peso: 9g
