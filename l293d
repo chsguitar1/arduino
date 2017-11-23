@@ -1,0 +1,27 @@
+int Sentido1 = 2; //Ligado ao pino 2 do L293D
+int Sentido2 = 7; //Ligado ao pino 7 do L293D
+
+void setup()
+{
+pinMode(Sentido1, OUTPUT);
+pinMode(Sentido2, OUTPUT);
+}
+
+void loop()
+{
+digitalWrite(Sentido1, LOW);
+digitalWrite(Sentido2, HIGH);
+delay(3000);
+desligar_motor();
+digitalWrite(Sentido1, HIGH);
+digitalWrite(Sentido2, LOW);
+delay(3000);
+desligar_motor();
+}
+
+void desligar_motor()
+{
+digitalWrite(Sentido1, LOW);
+digitalWrite(Sentido2, LOW);
+delay(3000);
+}
