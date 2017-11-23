@@ -28,7 +28,7 @@ void loop()
   buttonState = digitalRead(buttonPin);
 
   //if the button is pressed increment counter and wait a tiny bit to give us some          //time to release the button
-  if (buttonState == LOW) // light the LED
+  if (buttonState == LOW) 
   {
     counter++;
     delay(150);
