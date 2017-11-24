@@ -7,7 +7,7 @@
 NewPing sonar(TRIG_PIN, ECHO_PIN, MAX_DIST); //Defining newping object (The HC-SR04)
 
 // initialize the library with the numbers of the interface pins
-LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+LiquidCrystal lcd(10, 9, 5, 4, 3, 2);
 
 void setup() {
    lcd.clear(); //Clear screen
