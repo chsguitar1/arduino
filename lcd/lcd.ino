@@ -33,30 +33,4 @@ void loop() {
   delay(500); //Change this to the update time you want, I just used 1000 ms
 }
 
-/*
-Pin 1 -> GND
 
-Pin 2 -> VCC
-
-Pin 3 -> Arduino pin 2
-
-Pin 4 -> Arduino pin 33
-
-Pin 5 -> GND
-
-Pin 6 -> Arduino pin 31
-
-Pin 7 - 10 -> NONE
-
-Pin 11 -> Arduino pin 22
-
-Pin 12 -> Arduino pin 24
-
-Pin 13 -> Arduino pin 26
-
-Pin 14 -> Arduino pin 28
-
-Pin 15 -> VCC through 220 OHM resistor.
-
-Pin 16 -> GND
-*/
