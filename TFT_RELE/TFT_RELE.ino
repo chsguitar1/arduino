@@ -1,5 +1,3 @@
-#if 1
-
 #include <Adafruit_GFX.h>
 #include <MCUFRIEND_kbv.h>
 MCUFRIEND_kbv tft;
@@ -194,6 +192,5 @@ void finalizar(){
      tela = 1;
       telaInicial();
   }
-#endif
 
 
